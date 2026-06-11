@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F9FAFC;
+    color: #2B2B2B;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10%;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #2B2B2B;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FDBF3B;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 10% 80px 10%;
+    min-height: 85vh;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 540px;
+}
+
+.hero-content .subtitle {
+    color: #FDBF3B; 
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: #1A1A1A;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #606060;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #FDBF3B; 
+    color: #1A1A1A;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.9);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #1A1A1A;
+    border: 1.5px solid #1A1A1A;
+}
+
+.btn-secondary:hover {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img{
+width:200px ;
+border-radius: 80px;
+background-color: #3E2723   ;
+}
+
+.blob-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.blob-bg {
+    width: 100%;
+    height: auto;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; 
+}
+
+
+.projects-section {
+    padding: 80px 10% 120px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    margin-bottom: 64px;
+    color: #1A1A1A;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #FDBF3B;
+    margin: 12px auto 0 auto;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.project-card {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.02);
+    align-items: center;
+}
+
+.card-text {
+    flex: 1;
+    padding: 56px;
+}
+
+.card-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: #1A1A1A;
+}
+
+.card-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #606060;
+    margin-bottom: 24px;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1.5px solid #1A1A1A;
+    border-radius: 24px;
+    color: #1A1A1A;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+.card-image {
+    flex: 1;
+    height: 360px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+
+footer {
+    background-color: #FFFFFF;
+    padding: 48px 10% 32px 10%;
+    text-align: center;
+    border-top: 1px solid #ECECEC;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links a img {
+    opacity: 0.8;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover img {
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 24px 5%;
+    }
+    header nav ul {
+        gap: 16px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        padding: 140px 5% 60px 5%;
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    .projects-section {
+        padding: 60px 5%;
+    }
+    .project-card, .card-reverse {
+        flex-direction: column;
+    }
+    .card-text {
+        padding: 32px 24px;
+    }
+    .card-image {
+        width: 100%;
+        height: 240px;
+    }
+}
