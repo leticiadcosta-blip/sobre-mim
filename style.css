@@ -138,48 +138,12 @@ border-radius: 80px;
 background-color: #3E2723   ;
 }
 
-.blob-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 420px;
-}
-
-.blob-bg {
-    width: 100%;
-    height: auto;
-}
-
-.profile-pic {
-    position: absolute;
-    top: 48%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; 
-}
-
-
-.projects-section {
-    padding: 80px 10% 120px 10%;
-}
-
 .section-title {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 2.6rem;
     margin-bottom: 64px;
     color: #1A1A1A;
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #FDBF3B;
-    margin: 12px auto 0 auto;
 }
 
 .projects-container {
@@ -202,12 +166,6 @@ background-color: #3E2723   ;
     padding: 56px;
 }
 
-.card-text h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-bottom: 16px;
-    color: #1A1A1A;
-}
 
 .card-text p {
     font-size: 1rem;
@@ -256,59 +214,7 @@ footer {
     border-top: 1px solid #ECECEC;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 20px;
-}
-
-.social-links a img {
-    opacity: 0.8;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-links a:hover img {
-    transform: translateY(-2px);
-    opacity: 1;
-}
-
-.copyright {
-    font-size: 0.85rem;
-    color: #888888;
-}
 
 
-@media (max-width: 768px) {
-    header {
-        padding: 24px 5%;
-    }
-    header nav ul {
-        gap: 16px;
-    }
-    .hero {
-        flex-direction: column-reverse;
-        padding: 140px 5% 60px 5%;
-        text-align: center;
-        gap: 40px;
-    }
-    .hero-buttons {
-        justify-content: center;
-    }
-    .hero-content h1 {
-        font-size: 2.4rem;
-    }
-    .projects-section {
-        padding: 60px 5%;
-    }
-    .project-card, .card-reverse {
-        flex-direction: column;
-    }
-    .card-text {
-        padding: 32px 24px;
-    }
-    .card-image {
-        width: 100%;
-        height: 240px;
-    }
-}
+
+
