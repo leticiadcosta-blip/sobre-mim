@@ -106,22 +106,22 @@ header nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-.btn-primary {
+.btn {
     background-color: #FDBF3B; 
     color: #1A1A1A;
 }
 
-.btn-primary:hover {
+.btn:hover {
     filter: brightness(0.9);
 }
 
-.btn-secondary {
+.btn {
     background-color: transparent;
     color: #1A1A1A;
     border: 1.5px solid #1A1A1A;
 }
 
-.btn-secondary:hover {
+.btn:hover {
     background-color: #1A1A1A;
     color: #FFFFFF;
 }
