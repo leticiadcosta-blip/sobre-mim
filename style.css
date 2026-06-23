@@ -159,10 +159,15 @@ footer p{
 }
 
 /* HOVER- estilizações para quando o mouse passar sobre o elemento */
-/* PSEUDO-CLASSESé recurso do css que permite estilizar um elemento html com base em um estado especifico ou em */
+/* PSEUDO-CLASSES é recurso do CSS que permite estilizar um elemento HTML com base em um estado especifico ou em fatores externos, sem precisar alterar o codigo HTML*/
 
 header:hover{
-    background-color:rgba(153,134,236)
+    background-color:rgba(153,134,236) /* quanto menor o num. mais transparente*/
+}
+
+.btn-project:hover{
+    padding: 12px 28px;
+    box-shadow:2px 2px 2px 2px  #828282;
 }
 
 
